@@ -170,7 +170,6 @@
     LocalStorage.prototype.getItem = function(key) {
       var filename, metaKey;
       key = key.toString();
-      console.log('keys' + this.length);
       metaKey = this.metaKeyMap[key];
       if (!!metaKey) {
         filename = path.join(this.location, metaKey.key);
